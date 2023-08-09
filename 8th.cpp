@@ -48,3 +48,12 @@ int main()
 
     return 0;
 }
+
+
+// Output:-
+/* How do you check if two strings are anagrams of each other?
+
+String 1: "listen"
+String 2: "silent"
+Expected Output: True
+*/
