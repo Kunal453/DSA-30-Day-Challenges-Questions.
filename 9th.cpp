@@ -3,7 +3,7 @@
 using namespace std;
 
 void Reverse( string &str, int left, int right){
-  if(lrft >= right){
+  if(left >= right){
     return; // Base case: stop recursion when left index crosses right index
   }
   // swap charater from left to right in tstring
