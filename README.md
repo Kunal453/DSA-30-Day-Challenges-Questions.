@@ -6,6 +6,10 @@
 #### 5. Given an array of N integers, and an integer K, the task is to find the number of pairs of integers in the array whose sum is equal to K.
 #### 6. Given an unsorted array of N integers, find smallest and largest element in optimal way.
 #### 7. Rotate the array left N times. Accept N value from the user.
-#### 8. 
+#### 8. How do you check if two strings are anagrams of each other?
+###### String 1: "listen"
+###### String 2: "silent"
+###### Expected Output: True
+
 
 
