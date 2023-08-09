@@ -7,9 +7,7 @@
 #### 6. Given an unsorted array of N integers, find smallest and largest element in optimal way.
 #### 7. Rotate the array left N times. Accept N value from the user.
 #### 8. How do you check if two strings are anagrams of each other?
-###### String 1: "listen"
-###### String 2: "silent"
-###### Expected Output: True
+#### 9. Reverse a string using recursion.
 
 
 
