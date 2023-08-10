@@ -8,6 +8,9 @@
 #### 7. Rotate the array left N times. Accept N value from the user.
 #### 8. How do you check if two strings are anagrams of each other?
 #### 9. Reverse a string using recursion.
+#### 10. Given a string, find the first non-repeated character in it. If no such character exists, return a specific value (e.g., a special character or -1) to indicate that no non-repeated character is found.
+
+
 
 
 
