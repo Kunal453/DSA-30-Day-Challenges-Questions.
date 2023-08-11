@@ -28,6 +28,11 @@ void reverseWords(string &s)
     reverse(s.begin() + start, s.end());
 }
 
+/* ===========================================================================================
+Input - "i love programming"
+Output - "programming love i"
+*/
+
 int main()
 {
     string input;
