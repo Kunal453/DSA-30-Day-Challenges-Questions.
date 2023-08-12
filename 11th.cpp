@@ -25,14 +25,7 @@ void reverseWords(string &s)
     }
 
     // Reverse the last word
-    reverse(s.begin() + start, s.end());
-}
-
-/* ===========================================================================================
-Input - "i love programming"
-Output - "programming love i"
-*/
-
+  
 int main()
 {
     string input;
@@ -44,3 +37,9 @@ int main()
 
     return 0;
 }
+
+
+/* =========================================================================================== 
+ Input - "i love programming" 
+ Output - "programming love i" 
+ */
