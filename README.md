@@ -11,6 +11,7 @@
 #### 10. Given a string, find the first non-repeated character in it. If no such character exists, return a specific value (e.g., a special character or -1) to indicate that no non-repeated character is found.
 #### 11. You are given a string S, the task is to reverse the string word by word.
 #### 12. You're given a string S,  consisting of "{", "}", "(", ")", "[" and "]". Return true is S is balanced, else return false.
+#### 13. Given a Roman numeral, the task is to find its corresponding decimal value.
 
 
 
