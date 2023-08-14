@@ -12,6 +12,7 @@
 #### 11. You are given a string S, the task is to reverse the string word by word.
 #### 12. You're given a string S,  consisting of "{", "}", "(", ")", "[" and "]". Return true is S is balanced, else return false.
 #### 13. Given a Roman numeral, the task is to find its corresponding decimal value.
+#### 14. Given a string of lowercase alphabets, count all possible substrings (not necessarily distinct) that has exactly k distinct characters.
 
 
 
