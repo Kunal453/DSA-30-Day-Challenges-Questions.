@@ -14,6 +14,8 @@
 #### 13. Given a Roman numeral, the task is to find its corresponding decimal value.
 #### 14. Given a string of lowercase alphabets, count all possible substrings (not necessarily distinct) that has exactly k distinct characters.
 #### 15. Check whether two string are isomorphic. Note: Two strings are isomorphic if one-to-one mapping is possible for every character of first string to every character of second string while preserving the orders of the characters.
+#### 16. Find the GCD (Greatest Common Divisor) of 2 integers. The GCD of any 2 numbers is the largest number that divides both the integers.
+
 
 
 
