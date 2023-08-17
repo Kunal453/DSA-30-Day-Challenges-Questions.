@@ -1,3 +1,5 @@
+// Given a number N, figure out if it is a member of the fibonacci series or not. Return true if the number of members of the fibonacci series else false.
+
 #include <iostream>
 
 using namespace std;
