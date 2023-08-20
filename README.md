@@ -17,6 +17,7 @@
 #### 16. Find the GCD (Greatest Common Divisor) of 2 integers. The GCD of any 2 numbers is the largest number that divides both the integers.
 #### 17. Given a number N, figure out if it is a member of the fibonacci series or not. Return true if the number of members of the fibonacci series else false.
 #### 18. You are given two positive numbers N and M. You have to return the Nth root of M. If the Nth root of M is not an integer, return -1. Nth root of an integer M is a number, which, raised to the power N, gives M as a result
+#### 20. Given a sequence of n strings, the task is to check if any two similar words come together and then destroy each other then print the number of words left in the sequence after this pairwise destruction.
 
 
 
