@@ -20,6 +20,7 @@
 #### 19. Given an array, print the Next Greater Element (NGE) for every element. Input: arr[] = [ 4 , 5 , 2 , 25 ]
 #### 20. Given a sequence of n strings, the task is to check if any two similar words come together and then destroy each other then print the number of words left in the sequence after this pairwise destruction.
 #### 21. Given a stack with push(), pop(), and empty() operations, The task is to delete the middle element of it without using any additional data structure.
+#### 22. Given a string with brackets. If the start index of the open bracket is given, find the index of the closing bracket.
 
 
 
