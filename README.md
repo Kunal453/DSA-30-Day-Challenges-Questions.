@@ -19,6 +19,7 @@
 #### 18. You are given two positive numbers N and M. You have to return the Nth root of M. If the Nth root of M is not an integer, return -1. Nth root of an integer M is a number, which, raised to the power N, gives M as a result
 #### 19. Given an array, print the Next Greater Element (NGE) for every element. Input: arr[] = [ 4 , 5 , 2 , 25 ]
 #### 20. Given a sequence of n strings, the task is to check if any two similar words come together and then destroy each other then print the number of words left in the sequence after this pairwise destruction.
+#### 21. Given a stack with push(), pop(), and empty() operations, The task is to delete the middle element of it without using any additional data structure.
 
 
 
