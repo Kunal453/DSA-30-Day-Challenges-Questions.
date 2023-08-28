@@ -23,7 +23,7 @@
 #### 22. Given a string with brackets. If the start index of the open bracket is given, find the index of the closing bracket.
 #### 23. Given an integer k and a queue of integers, The task is to reverse the order of the first k elements of the queue, leaving the other elements in the same relative order
 #### 24. Given an array and a positive integer k, find the first negative integer for each window(contiguous subarray) of size k. If a window does not contain a negative integer, then print 0 for that window.
-
+#### 25. You are given a binary tree. A binary tree is considered balanced if the heights of the two subtrees of any node never differ by more than 1. Write a code to determine if a given binary tree is balanced or not.
 
 
 
