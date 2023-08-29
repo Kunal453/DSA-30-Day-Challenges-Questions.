@@ -26,6 +26,7 @@
 #### 25. You are given a binary tree. A binary tree is considered balanced if the heights of the two subtrees of any node never differ by more than 1. Write a code to determine if a given binary tree is balanced or not.
 #### 26. Given a binary tree, find the largest value in each level.
 #### 27. Given a binary search tree, task is to find Kth largest element in the binary search tree.
+#### 28. Check whether a given graph is Bipartite or not
 
 
 
