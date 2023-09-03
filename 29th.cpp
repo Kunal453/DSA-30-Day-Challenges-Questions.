@@ -1,93 +1,66 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Adjacency List
-vector<vector<int>> adj;
+class Graph {
+    int V;
+    list<int> *adj;
 
-// Function to add edge u --> v
-void addEdge(int u, int v){
-    adj[u].push_back(v);
-}
-// Helper function to check for cycle.
-bool checkCycleUtil (int node, 
-            bool *visited, bool *inStack){
-    // Check if node exists in the
-    // recursive stack.
-    if (inStack[node])
-        return true;
-    
-    // Check if node is already visited.
-    if (visited[node])
-        return false;
-    
-    // Marking node as visited.
-    visited[node] = true;
+    bool isCyclicUtil(int v, bool visited[], bool *recStack) {
+        if (visited[v] == false) {
+            visited[v] = true;
+            recStack[v] = true;
 
-    // Marking node to be present in
-    // recursive stack.
-    inStack[node] = true;
-
-    // Iterate for all adjacent of 
-    // 'node'.
-    for (int v : adj[node]){
-        // Recurse for 'v'.
-        if (checkCycleUtil(v, visited, inStack))
-            return true;
-    }
-
-    // Mark 'node' to be removed
-    // from the recursive stack.
-    inStack[node] = false;
-
-    // Return false if no cycle exists.
-    return false;
-}
-// Function to check for the cycle.
-bool checkCycle(int V, int E){
-    // Defining visited and inStack array
-    // to keep track of visited vertices 
-    // and vertices in Recursive stack. 
-    bool visited[V]; 
-    bool inStack[V]; 
-    for(int i = 0; i < V; i++){
-        visited[i] = false;
-        inStack[i] = false;
-    }
-    
-    // Iterating for i = 0 To i = V - 1
-    // to detect cycle in different 
-    // DFS trees. 
-    for (int i = 0; i < V; i++){
-        // Check if cycle exists.
-        if (checkCycleUtil(i, visited, inStack)){
-            return true;
+            for (auto i = adj[v].begin(); i != adj[v].end(); ++i) {
+                if (!visited[*i] && isCyclicUtil(*i, visited, recStack))
+                    return true;
+                else if (recStack[*i])
+                    return true;
+            }
         }
+        recStack[v] = false;
+        return false;
     }
-    // Returning false, if no cycle is found.
-    return false;
 
-}
-int main(){
-    // Defining the number of Vertices
-    // and the number of edges. 
-    int V = 5, E = 7;
+public:
+    Graph(int V) {
+        this->V = V;
+        adj = new list<int>[V];
+    }
 
-    // Defining Adjacency List
-    adj.resize(V);
-    // Building the Graph same as example 1.
-    addEdge(0, 1);
-    addEdge(0, 4);
-    addEdge(0, 2);
-    addEdge(1, 3);
-    addEdge(2, 3);
-    addEdge(4, 1);
-    addEdge(4, 2);
+    void addEdge(int v, int w) {
+        adj[v].push_back(w);
+    }
 
-    // If the graph contains cycle 
-    // Print YES
-    if(checkCycle(V, E))
-        cout << "YES\n";
-    // Otherwise Print NO
+    bool isCyclic() {
+        bool *visited = new bool[V];
+        bool *recStack = new bool[V];
+        for (int i = 0; i < V; i++) {
+            visited[i] = false;
+            recStack[i] = false;
+        }
+
+        for (int i = 0; i < V; i++) {
+            if (isCyclicUtil(i, visited, recStack))
+                return true;
+        }
+
+        return false;
+    }
+};
+
+int main() {
+    Graph g(4); // Create a graph with 4 vertices
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 2);
+    g.addEdge(2, 0);
+    g.addEdge(2, 3);
+    g.addEdge(3, 3);
+
+    if (g.isCyclic())
+        cout << "Graph contains a cycle." << endl;
     else
-        cout << "NO\n";
+        cout << "Graph does not contain a cycle." << endl;
+
+    return 0;
 }
